@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Button" />
+        android:text="Get EditText" />
 
     <EditText
         android:id="@+id/editText"
@@ -29,10 +29,52 @@
         android:hint="input something"
         />
 
+    <Button
+        android:id="@+id/buttonChangeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change image"
+        android:textAllCaps="false"/>
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/kotlin_bean"
         />
+
+    <Button
+        android:id="@+id/buttonToggleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle ProgressBar"
+        android:textAllCaps="false"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/buttonProgressBarIncr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress forward"
+        android:textAllCaps="false"
+        android:gravity="right"/>
+    <ProgressBar
+        android:id="@+id/progressBarLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        />
+
+    <Button
+        android:id="@+id/buttonShowAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show alert dialog"
+        android:textAllCaps="false"
+        android:layout_gravity="left"/>
+
 </LinearLayout>
