@@ -76,5 +76,11 @@
         android:text="Show alert dialog"
         android:textAllCaps="false"
         android:layout_gravity="left"/>
+    <Button
+        android:id="@+id/buttonLinearLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show LinearLayout Activity"
+        />
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.uiwidgettest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val buttonShowAlertDialog: Button = findViewById(R.id.buttonShowAlertDialog)
         buttonShowAlertDialog.setOnClickListener(this)
+
+        val buttonLinearLayout: Button = findViewById(R.id.buttonLinearLayout)
+        buttonLinearLayout.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -68,6 +72,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     }
                     show()
                 }
+            }
+            R.id.buttonLinearLayout -> {
+                val intent = Intent(this, LinearLayoutActivity::class.java)
+                startActivity(intent)
             }
         }
     }
