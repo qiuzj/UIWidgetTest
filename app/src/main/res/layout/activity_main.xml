@@ -76,11 +76,71 @@
         android:text="Show alert dialog"
         android:textAllCaps="false"
         android:layout_gravity="left"/>
-    <Button
-        android:id="@+id/buttonLinearLayout"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Show LinearLayout Activity"
-        />
 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonLinearLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="LinearLayout"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/buttonRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/buttonFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FrameLayout"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonIncludeLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="IncludeLayout"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/buttonLinearLayout"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="LinearLayout"-->
+<!--        android:textAllCaps="false"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonRelativeLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="RelativeLayout"-->
+<!--        -->
+<!--        android:textAllCaps="false"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonFrameLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="FrameLayout"-->
+<!--        android:textAllCaps="false"-->
+<!--        />-->
 </LinearLayout>

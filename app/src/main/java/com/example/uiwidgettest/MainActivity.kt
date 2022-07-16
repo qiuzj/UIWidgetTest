@@ -29,6 +29,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val buttonLinearLayout: Button = findViewById(R.id.buttonLinearLayout)
         buttonLinearLayout.setOnClickListener(this)
+
+        val buttonRelativeLayout: Button = findViewById(R.id.buttonRelativeLayout)
+        buttonRelativeLayout.setOnClickListener(this)
+
+        val buttonFrameLayout: Button = findViewById(R.id.buttonFrameLayout)
+        buttonFrameLayout.setOnClickListener(this)
+
+        val buttonIncludeLayout: Button = findViewById(R.id.buttonIncludeLayout)
+        buttonIncludeLayout.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -75,6 +84,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.buttonLinearLayout -> {
                 val intent = Intent(this, LinearLayoutActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.buttonRelativeLayout -> {
+                val intent = Intent(this, RelativeLayoutActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.buttonFrameLayout -> {
+                val intent = Intent(this, FrameLayoutActivity::class.java)
+                startActivity(intent)
+            }
+
+            R.id.buttonIncludeLayout -> {
+                val intent = Intent(this, IncludeLayoutActivity::class.java)
                 startActivity(intent)
             }
         }
