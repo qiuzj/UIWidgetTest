@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val buttonIncludeLayout: Button = findViewById(R.id.buttonIncludeLayout)
         buttonIncludeLayout.setOnClickListener(this)
+
+//        val buttonCustomLayout: Button = findViewById(R.id.buttonCustomLayout)
+//        buttonCustomLayout.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -99,6 +102,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, IncludeLayoutActivity::class.java)
                 startActivity(intent)
             }
+//            R.id.buttonCustomLayout -> {
+//                val intent = Intent(this, TitleLayout::class.java)
+//                startActivity(intent)
+//            }
         }
     }
 }
